@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>All Recent Books</title>
+    <!-- <%@include file="allComponents/allCSS.jsp" %> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        .back-img {
+            background: url("book.jpg");
+            background-repeat: no-repeat;
+            height: 50vh;
+            width: 100%;
+            background-size: cover;
+            filter: blur(1px);
+        }
+        
+        </style>
+</head>
+
+<body>
+
+    <div id="navbar-container"></div>
+
+    <script>
+        // Use fetch to load the external navbar HTML
+        fetch('allComponents/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.log('Error loading navbar:', error));
+    </script>
+
+    <div class="container-fluid back-img">
+        <h2 class="text-center text-light">Book Management System</h2>
+    </div>
+
+    <!--  start recent book -->
+
+    <div class="container-fluid text-center mt-2 mb-2">
+        <h3>Recent Books</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body ">
+                        <img alt="error" style="width: 150px;height: 200px;" src="pythonBook.jpeg">
+                        <p class="text-center">PYTHON PROGRAMMING</p>
+                        <p class="text-center">Dr. Abhinav</p>
+                        <p class="text-center">Category: New</p>
+                        <div class="row text-center">
+                            <a href="" class="btn btn-danger btn-sm ml-1">Add Cart</a>
+                            <a href="view_bookDetails.html" class="btn btn-success btn-sm ml-1">View Details</a>
+                            <a href="" class="btn btn-danger btn-sm ml-1">
+                                <i class="fa-solid fa-indian-rupee-sign"></i> 599
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body ">
+                        <img alt="error" style="width: 150px;height: 200px;" src="pythonBook.jpeg">
+                        <p class="text-center">PYTHON PROGRAMMING</p>
+                        <p class="text-center">Dr. Abhinav</p>
+                        <p class="text-center">Category: New</p>
+                        <div class="row text-center">
+                            <a href="" class="btn btn-danger btn-sm ml-1">Add Cart</a>
+                            <a href="view_bookDetails.html" class="btn btn-success btn-sm ml-1">View Details</a>
+                            <a href="" class="btn btn-danger btn-sm ml-1">
+                                <i class="fa-solid fa-indian-rupee-sign"></i> 599
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body ">
+                        <img alt="error" style="width: 150px;height: 200px;" src="pythonBook.jpeg">
+                        <p class="text-center">PYTHON PROGRAMMING</p>
+                        <p class="text-center">Dr. Abhinav</p>
+                        <p class="text-center">Category: New</p>
+                        <div class="row text-center">
+                            <a href="" class="btn btn-danger btn-sm ml-1">Add Cart</a>
+                            <a href="view_bookDetails.html" class="btn btn-success btn-sm ml-1">View Details</a>
+                            <a href="" class="btn btn-danger btn-sm ml-1">
+                                <i class="fa-solid fa-indian-rupee-sign"></i> 599
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body ">
+                        <img alt="error" style="width: 150px;height: 200px;" src="pythonBook.jpeg">
+                        <p class="text-center">PYTHON PROGRAMMING</p>
+                        <p class="text-center">Dr. Abhinav</p>
+                        <p class="text-center">Category: New</p>
+                        <div class="row text-center">
+                            <a href="" class="btn btn-danger btn-sm ml-1">Add Cart</a>
+                            <a href="view_bookDetails.html" class="btn btn-success btn-sm ml-1">View Details</a>
+                            <a href="" class="btn btn-danger btn-sm ml-1">
+                                <i class="fa-solid fa-indian-rupee-sign"></i> 599
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="all_recentBooks.html" class="btn btn-danger btn-sm">View All</a>
+        </div>
+    </div>
+
+
+
+    <!-- end recent book -->
+
+    <hr>
+
+    <!--  start New book -->
+    <div class="container-fluid text-center mt-2 mb-2">
+        <h3>Recent Books</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body ">
+                        <img alt="error" style="width: 150px;height: 200px;" src="pythonBook.jpeg">
+                        <p class="text-center">PYTHON PROGRAMMING</p>
+                        <p class="text-center">Dr. Abhinav</p>
+                        <p class="text-center">Category: New</p>
+                        <div class="row text-center">
+                            <a href="" class="btn btn-danger btn-sm ml-1">Add Cart</a>
+                            <a href="view_bookDetails.html" class="btn btn-success btn-sm ml-1">View Details</a>
+                            <a href="" class="btn btn-danger btn-sm ml-1">
+                                <i class="fa-solid fa-indian-rupee-sign"></i> 599
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body ">
+                        <img alt="error" style="width: 150px;height: 200px;" src="pythonBook.jpeg">
+                        <p class="text-center">PYTHON PROGRAMMING</p>
+                        <p class="text-center">Dr. Abhinav</p>
+                        <p class="text-center">Category: New</p>
+                        <div class="row text-center">
+                            <a href="" class="btn btn-danger btn-sm ml-1">Add Cart</a>
+                            <a href="view_bookDetails.html" class="btn btn-success btn-sm ml-1">View Details</a>
+                            <a href="" class="btn btn-danger btn-sm ml-1">
+                                <i class="fa-solid fa-indian-rupee-sign"></i> 599
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body ">
+                        <img alt="error" style="width: 150px;height: 200px;" src="pythonBook.jpeg">
+                        <p class="text-center">PYTHON PROGRAMMING</p>
+                        <p class="text-center">Dr. Abhinav</p>
+                        <p class="text-center">Category: New</p>
+                        <div class="row text-center">
+                            <a href="" class="btn btn-danger btn-sm ml-1">Add Cart</a>
+                            <a href="view_bookDetails.html" class="btn btn-success btn-sm ml-1">View Details</a>
+                            <a href="" class="btn btn-danger btn-sm ml-1">
+                                <i class="fa-solid fa-indian-rupee-sign"></i> 599
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body ">
+                        <img alt="error" style="width: 150px;height: 200px;" src="pythonBook.jpeg">
+                        <p class="text-center">PYTHON PROGRAMMING</p>
+                        <p class="text-center">Dr. Abhinav</p>
+                        <p class="text-center">Category: New</p>
+                        <div class="row text-center">
+                            <a href="" class="btn btn-danger btn-sm ml-1">Add Cart</a>
+                            <a href="view_bookDetails.html" class="btn btn-success btn-sm ml-1">View Details</a>
+                            <a href="" class="btn btn-danger btn-sm ml-1">
+                                <i class="fa-solid fa-indian-rupee-sign"></i> 599
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="all_newBooks.html" class="btn btn-danger btn-sm">View All</a>
+        </div>
+    </div>
+
+    <!-- end New book -->
+
+    <hr>
+
+
+
+    <!--  start old book -->
+    <div class="container-fluid text-center mt-2 mb-2">
+        <h3>Recent Books</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body ">
+                        <img alt="error" style="width: 150px;height: 200px;" src="pythonBook.jpeg">
+                        <p class="text-center">PYTHON PROGRAMMING</p>
+                        <p class="text-center">Dr. Abhinav</p>
+                        <p class="text-center">Category: New</p>
+                        <div class="row text-center">
+                            <a href="" class="btn btn-danger btn-sm ml-1">Add Cart</a>
+                            <a href="view_bookDetails.html" class="btn btn-success btn-sm ml-1">View Details</a>
+                            <a href="" class="btn btn-danger btn-sm ml-1">
+                                <i class="fa-solid fa-indian-rupee-sign"></i> 599
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body ">
+                        <img alt="error" style="width: 150px;height: 200px;" src="pythonBook.jpeg">
+                        <p class="text-center">PYTHON PROGRAMMING</p>
+                        <p class="text-center">Dr. Abhinav</p>
+                        <p class="text-center">Category: New</p>
+                        <div class="row text-center">
+                            <a href="" class="btn btn-danger btn-sm ml-1">Add Cart</a>
+                            <a href="view_bookDetails.html" class="btn btn-success btn-sm ml-1">View Details</a>
+                            <a href="" class="btn btn-danger btn-sm ml-1">
+                                <i class="fa-solid fa-indian-rupee-sign"></i> 599
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body ">
+                        <img alt="error" style="width: 150px;height: 200px;" src="pythonBook.jpeg">
+                        <p class="text-center">PYTHON PROGRAMMING</p>
+                        <p class="text-center">Dr. Abhinav</p>
+                        <p class="text-center">Category: New</p>
+                        <div class="row text-center">
+                            <a href="" class="btn btn-danger btn-sm ml-1">Add Cart</a>
+                            <a href="view_bookDetails.html" class="btn btn-success btn-sm ml-1">View Details</a>
+                            <a href="" class="btn btn-danger btn-sm ml-1">
+                                <i class="fa-solid fa-indian-rupee-sign"></i> 599
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body ">
+                        <img alt="error" style="width: 150px;height: 200px;" src="pythonBook.jpeg">
+                        <p class="text-center">PYTHON PROGRAMMING</p>
+                        <p class="text-center">Dr. Abhinav</p>
+                        <p class="text-center">Category: New</p>
+                        <div class="row text-center">
+                            <a href="" class="btn btn-danger btn-sm ml-1">Add Cart</a>
+                            <a href="view_bookDetails.html" class="btn btn-success btn-sm ml-1">View Details</a>
+                            <a href="" class="btn btn-danger btn-sm ml-1">
+                                <i class="fa-solid fa-indian-rupee-sign"></i> 599
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="all_oldBooks.html" class="btn btn-danger btn-sm">View All</a>
+        </div>
+    </div>
+
+    <!-- end old book -->
+
+    <!-- <%@include file="allComponents/footer.jsp" %> -->
+    <div claas="container-fluid " style="background-color:  #303f9f;">
+        <div class="text-center text-white p-3">
+            <h5> Designed And developed by Shivam Chauhan</h5>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
